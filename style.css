@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Overpass", sans-serif;
+  background-color: hsl(216, 12%, 8%);
+  align-items: center;
+}
+.hidden {
+  display: none;
+}
+button {
+  border: none;
+  background-color: hsl(213, 19%, 20%);
+  font-family: "Overpass", sans-serif;
+  color: hsl(217, 12%, 63%);
+  font-weight: 400;
+  font-size: 15px;
+}
+.container {
+  margin: 11em auto;
+  padding: 2em;
+  color: hsl(216, 12%, 54%);
+  background-color: hsl(213, 19%, 18%);
+  font-size: 14px;
+  font-weight: 300;
+  width: 90%;
+  max-width: 412px;
+  border-radius: 20px;
+}
+.star {
+  width: 48px;
+  height: 48px;
+  box-shadow: 0 1px 0 0 hsl(213, 19%, 18%);
+  vertical-align: middle;
+}
+.container h1 {
+  padding: 0.5em 0;
+  color: white;
+}
+.round {
+  border-radius: 50%;
+}
+.container p {
+  margin-bottom: 8%;
+  line-height: 1rem;
+  font-size: 15px;
+}
+.rating {
+  width: 100%;
+  align-items: center;
+  margin: 34px 0;
+}
+.num {
+  width: 50px;
+  height: 49px;
+  color: hsl(0, 0%, 100%);
+}
+.num:hover {
+  background-color: hsl(214, 8%, 50%);
+}
+.rating :not(:last-child) {
+  margin-right: 20px;
+}
+.num:focus {
+  background-color: hsl(25, 97%, 53%);
+}
+.sub {
+  height: 45px;
+  width: 100%;
+  border-radius: 25px;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(25, 97%, 53%);
+}
+.sub:hover {
+  cursor: pointer;
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+}
+.change-color {
+  background-color: hsl(25, 97%, 53%);
+}
+.two {
+  text-align: center;
+}
+.two img {
+  margin-top: 44px;
+  display: block;
+  margin-bottom: 30px;
+  margin-left: 25%;
+}
+.two h1 {
+  margin-top: 40px;
+  margin-bottom: 13px;
+  font-weight: 700;
+}
+.content {
+  color: hsl(25, 97%, 53%);
+  padding: 1px 2px 1px 2px;
+  border-radius: 5px;
+}
+@media all and (max-width: 375px) {
+  .container {
+    width: 85.47%;
+    margin: 45% 6.26% auto 6.26%;
+    font-size: 12px;
+    padding: 3%;
+  }
+  .star {
+    padding: 0;
+    margin-top: 7%;
+    width: 45px;
+    height: 45px;
+  }
+  .container h1 {
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  .container p {
+    margin-bottom: 6%;
+  }
+  .rating :not(:last-child) {
+    margin-right: 2%;
+  }
+  .rating {
+    margin-top: 0;
+    margin-bottom: 8%;
+  }
+  .sub {
+    margin-bottom: 8%;
+  }
+  .two img {
+    width: 45%;
+  }
+}
